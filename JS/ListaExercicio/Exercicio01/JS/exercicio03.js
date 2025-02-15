@@ -1,7 +1,7 @@
 let form03 = document.getElementById('form03');
 
 form03.addEventListener('submit', function(event){
-    event.defaultPrevented()
+    event.preventDefault();
 
     numMul1 = document.getElementById('numMultiplo1').valeu;
     numMul2 = document.getElementById('numMultiplo2').valeu;
@@ -9,6 +9,7 @@ form03.addEventListener('submit', function(event){
     numMul1 = parseInt(numMul1);
     numMul2 = parseInt(numMul2);
 
+    console.log(numMul1, numMul2);
     let multiplo = numMul1 / numMul2;
 
     if (multiplo == 0){

@@ -1,7 +1,7 @@
 let form02 = document.getElementById('form02');
 
 form02.addEventListener('submit', function(event){
-    event.preventDefault()
+    event.preventDefault();
 
     num = document.getElementById('numPar').value;
 

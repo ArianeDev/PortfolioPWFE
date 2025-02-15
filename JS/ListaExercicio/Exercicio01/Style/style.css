@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Chewy&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(modal.css);
+
+*:not(dialog){
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', serif;
+}
+body{
+	min-height: 100vh;
+	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 4, 50) 100%)
+}
+/* Botão de voltar */
+a{
+	position: fixed;
+	font-size: 3rem;
+	margin-left: 1rem;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-family: 'Poppins';
+	z-index: 1;
+}
+/* Bolas caindo */
+.container{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+	& .bolinhas{
+		position: absolute;
+		display: flex;
+	
+		& span {
+			width: 30px;
+			height: 30px;
+			background-color: rgb(5, 73, 98);
+			margin: 0 3rem;
+			border-radius: 50%;
+			box-shadow: 0 0 0 10px rgba(5, 73, 98, 0.273), 
+			0 0 50px rgb(5, 73, 98), 
+			0 0 100px rgb(5, 73, 98);
+			animation: animar calc(90s / var(--i)) 5s linear infinite;
+		}
+		& span:nth-of-type(even){
+			background-color: rgb(5, 8, 98);
+			box-shadow: 0 0 0 10px rgba(5, 8, 98, 0.273),
+			0 0 50px rgb(5, 8, 98),
+			0 0 100px rgb(5, 8, 98);
+		}
+	}
+}
+/* Animação das bolinhas */
+@keyframes animar {
+	0%{
+		transform: translateY(-10vh)scale(1);
+	}
+	100%{
+		transform: translateY(100vh)scale(0);
+	}
+}
+/* Título do meio */
+#text{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	& h1 {
+		font-family: "Chewy", serif;
+		font-size: 6rem;
+		letter-spacing: 0.5rem;
+		color: rgb(182, 182, 182);
+	}
+	& p {
+		color: rgb(182, 182, 182);
+	}
+}
+.conteinerExer{
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 40% 40%;
+	gap: 3rem;
+
+	& #exercicio {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: rgb(182, 182, 182);
+		background-color: rgb(5, 8, 98);
+		box-shadow: 5px 5px 8px rgb(5, 8, 98);
+		border-radius: 1rem;
+		padding: 1rem;
+
+		& h2 {
+			color: rgb(255, 255, 255);
+			text-align: center;
+			margin: 1rem 0;
+			width: 80%;
+		}
+		& form {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+			width: 80%;
+			padding: 1rem 0;
+			gap: 1rem;
+			
+			& .input {
+				display: flex;
+				flex-direction: column;
+				gap: 0.2rem;
+			}
+			& input[type="number"] {
+				border-radius: 0.5rem;
+				border: none;
+				outline: none;
+				height: 2rem;
+				background-color: rgb(240, 240, 240);
+				padding-left: 0.5rem;
+				
+				&:hover, :focus{
+					border: 0.15rem solid rgb(237, 182, 71);
+				}
+			}
+			& input[type="submit"] {
+				height: 5vh;
+				border: none;
+				outline: none;
+				margin-top: 1.5rem;
+				padding-left: 0.5rem;
+				border-radius: 0.5rem;
+				background-color: rgba(73, 4, 202, 0.9);
+				cursor: pointer;
+				font-size: 0.9rem;
+				font-weight: 600;
+				color: rgb(224, 224, 224);
+				transition: .5s all;
+				
+				&:hover {
+					background-color: rgba(187, 71, 237, 0.5);
+					color: rgb(231, 231, 231);
+				}
+			}
+		}
+	}
+}
