@@ -1,0 +1,2 @@
+1 - Não abriu o modal - estava sem: event.preventDefault();
+2 - Apareceu as variáveis como Nan - estava sem: .value

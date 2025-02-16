@@ -1,4 +1,4 @@
-let form02 = document.getElementById('form02');
+const form02 = document.getElementById('form02');
 
 form02.addEventListener('submit', function(event){
     event.preventDefault();
@@ -8,8 +8,8 @@ form02.addEventListener('submit', function(event){
     num = parseInt(num);
 
     if (num%2 == 0){
-        document.getElementById('resultado02').innerHTML = `O número ${num} é par`;
+        document.getElementById('resultado02').innerHTML = `<p>O número ${num} é par.</p>`;
     } else {
-        document.getElementById('resultado02').innerHTML = `O número ${num} é impar`;
+        document.getElementById('resultado02').innerHTML = `<p>O número ${num} é impar.</p>`;
     }
 })
