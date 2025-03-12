@@ -13,8 +13,6 @@ form06.addEventListener('submit', function(event){
 
 	let media = (nota1 + nota2) / 2
 
-	console.log(media, nota1, nota2)
-
 	if (media > 6){
 		resultado06.innerHTML = `<p>O aluno está a cima da média.</p>`;
 	} else {

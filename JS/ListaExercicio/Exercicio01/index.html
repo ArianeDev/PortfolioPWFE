@@ -11,7 +11,12 @@
         <script src="JS/exercicio04.js" defer></script>
         <script src="JS/exercicio05.js" defer></script>
         <script src="JS/exercicio06.js" defer></script>
-        <script src="JS/exercicio07.js"></script>
+        <script src="JS/exercicio07.js" defer></script>
+        <script src="JS/exercicio08.js" defer></script>
+        <script src="JS/exercicio09.js" defer></script>
+        <script src="JS/exercicio10.js" defer></script>
+        <script src="JS/exercicio11.js" defer></script>
+        <script src="JS/exercicio12.js" defer></script>
     </head>
     <body>
         <main>
@@ -49,6 +54,7 @@
                 <p>Aula 01</p>
             </section>
             <div class="conteinerExer">
+                <!-- Exercício 1 -->
                 <section id="exercicio">
                     <h2>Exercício 1 - Diferença de dois números</h2>
                     <form method="get" id="form01">
@@ -63,6 +69,7 @@
                         <input type="submit" value="Ver resposta" data-modal="modal-1" class="openModal">
                     </form>
                 </section>
+                <!-- Exercício 2 -->
                 <section id="exercicio">
                     <h2>Exercício 2 - Verifica se o número é par</h2>
                     <form method="get" id="form02">
@@ -74,6 +81,7 @@
                         <input type="submit" value="Ver resposta" data-modal="modal-2" class="openModal">
                     </form>
                 </section>
+                <!-- Exercício 3 -->
                 <section id="exercicio">
                     <h2>Exercício 3 - Verificar se o número primeiro é múltiplo do segundo</h2>
                     <form method="get" id="form03">
@@ -88,6 +96,7 @@
                         <input type="submit" value="Ver resposta" data-modal="modal-3" class="openModal">
                     </form>
                 </section>
+                <!-- Exercício 4 -->
                 <section id="exercicio">
                     <h2>Exercício 4 - Converter celsius para fahrenheit</h2>
                     <form method="get" id="form04">
@@ -99,6 +108,7 @@
                         <input type="submit" value="Ver resposta" data-modal="modal-4" class="openModal">
                     </form>
                 </section>
+                <!-- Exercício 5 -->
                 <section id="exercicio">
                     <h2>Exercício 5 - Calcular área de um quadrado</h2>
                     <form method="get" id="form05">
@@ -113,6 +123,7 @@
                         <input type="submit" value="Ver resposta" data-modal="modal-5" class="openModal">
                     </form>
                 </section>
+                <!-- Exercício 6 -->
                 <section id="exercicio">
                     <h2>Exercício 6 - Calcular médias de duas notas.</h2>
                     <form method="get" id="form06">
@@ -127,6 +138,81 @@
                         <input type="submit" value="Ver resposta" data-modal="modal-6" class="openModal">
                     </form>
                 </section>
+                <!-- Exercício 7 -->
+                <section id="exercicio">
+                    <h2>Exercício 7 - Calcular o IMC.</h2>
+                    <form method="get" id="form07">
+                        <div class="input">
+                            <label>Digite seu peso:</label>
+                            <input type="number" name="peso" id="peso">
+                        </div>
+                        <div class="input">
+                            <label>Digite sua altura:</label>
+                            <input type="text" name="altura" id="altura">
+                        </div>
+                        <input type="submit" value="Ver resposta" data-modal="modal-7" class="openModal">
+                    </form>
+                </section>
+                <!-- Exercício 8 -->
+                <section id="exercicio">
+                    <h2>Exercício 8 - Verifica se o ano é bissexto.</h2>
+                    <form method="get" id="form08">
+                        <div class="input">
+                            <label>Digite o ano:</label>
+                            <input type="number" name="ano" id="ano">
+                        </div>
+                        <input type="submit" value="Ver resposta" data-modal="modal-8" class="openModal">
+                    </form>
+                </section>
+                <!-- Exercício 9 -->
+                <section id="exercicio">
+                    <h2>Exercício 9 - Valor dos produtos com a taxa de câmbio.</h2>
+                    <form method="get" id="form09">
+                        <div class="input">
+                            <label>Digite o ano:</label>
+                            <input type="number" name="taxa" id="taxa">
+                        </div>
+                        <input type="submit" value="Ver resposta" data-modal="modal-9" class="openModal">
+                    </form>
+                </section>
+                <!-- Exercício 10 -->
+                <section id="exercicio">
+                    <h2>Exercício 10 - Exibe uma tabuada.</h2>
+                    <form method="get" id="form10">
+                        <div class="input"></div>
+                        <div class="input">
+                            <label>Digite um número de 1 à 9:</label>
+                            <input type="number" name="numTab" id="numTab">
+                        </div>
+                        <input type="submit" value="Ver resposta" data-modal="modal-10" class="openModal">
+                    </form>
+                </section>
+                <!-- Exercício 11 -->
+                <section id="exercicio">
+                    <h2>Exercício 11 - Brinque de pedra, papel e tesoura com a máquina.</h2>
+                    <form method="get" id="form11">
+                        <div class="input">
+                            <label>Digite sua joagada:</label>
+                            <input type="text" name="jogo" id="jogo">
+                        </div>
+                        <input type="submit" value="Ver resposta" data-modal="modal-11" class="openModal">
+                    </form>
+                </section>
+                <!-- Exercício 12 -->
+                <section id="exercicio">
+                    <h2>Exercício 12 - Quer calcular o fatorial de um número?</h2>
+                    <form method="get" id="form12">
+                        <div class="input">
+                            <label>Digite um número:</label>
+                            <input type="number" name="fatorial" id="fatorial">
+                        </div>
+                        <input type="submit" value="Ver resposta" data-modal="modal-12" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Modals  -->
+
+                <!-- Modal 1 -->
                 <dialog id="modal-1">
                     <div class="modal-button">
                         <button class="closeModal" data-modal="modal-1">X</button>
@@ -135,6 +221,7 @@
                         <div class="resultado" id="resultado01"></div>
                     </div>
                 </dialog>
+                <!-- Modal 2 -->
                 <dialog id="modal-2">
                     <div class="modal-button">
                         <button class="closeModal" data-modal="modal-2">X</button>
@@ -143,6 +230,7 @@
                         <div class="resultado" id="resultado02"></div>
                     </div>
                 </dialog>
+                <!-- Modal 3 -->
                 <dialog id="modal-3">
                     <div class="modal-button">
                         <button class="closeModal" data-modal="modal-3">X</button>
@@ -151,6 +239,7 @@
                         <div class="resultado" id="resultado03"></div>
                     </div>
                 </dialog>
+                <!-- Modal 4 -->
                 <dialog id="modal-4">
                     <div class="modal-button">
                         <button class="closeModal" data-modal="modal-4">X</button>
@@ -159,6 +248,7 @@
                         <div class="resultado" id="resultado04"></div>
                     </div>
                 </dialog>
+                <!-- Modal 5 -->
                 <dialog id="modal-5">
                     <div class="modal-button">
                         <button class="closeModal" data-modal="modal-5">X</button>
@@ -167,12 +257,67 @@
                         <div class="resultado" id="resultado05"></div>
                     </div>
                 </dialog>
+                <!-- Modal 6 -->
                 <dialog id="modal-6">
                     <div class="modal-button">
                         <button class="closeModal" data-modal="modal-6">X</button>
                     </div>
                     <div class="result">
                         <div class="resultado" id="resultado06"></div>
+                    </div>
+                </dialog>
+                <!-- Modal 7 -->
+                <dialog id="modal-7">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-7">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado07"></div>
+                    </div>
+                </dialog>
+                <!-- Modal 8 -->
+                <dialog id="modal-8">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-8">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado08"></div>
+                    </div>
+                </dialog>
+                <!-- Modal 9 -->
+                <dialog id="modal-9">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-9">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado09"></div>
+                    </div>
+                </dialog>
+                <!-- Modal 10 -->
+                <dialog id="modal-10" class="tabuada">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-10">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado10"></div>
+                    </div>
+                </dialog>
+                <!-- Modal 11 -->
+                <dialog id="modal-11">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-11">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado11"></div>
+                    </div>
+                </dialog>
+                <!-- Modal 12 -->
+                <dialog id="modal-12">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-12">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado12"></div>
                     </div>
                 </dialog>
             </div>

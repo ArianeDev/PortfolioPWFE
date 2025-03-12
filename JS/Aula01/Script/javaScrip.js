@@ -45,15 +45,17 @@
 //     contador += 10;    
 // }
 
-let a = 1;
+// let a = 1;
 
-do {
+// do {
 
-    if (a%2 == 0){
-        document.write('É par');
-    } else {
-        document.write('É impar');
-    }
+//     if (a%2 == 0){
+//         document.write('É par');
+//     } else {
+//         document.write('É impar');
+//     }
 
-    a ++
-} while (a < 20);
+//     a ++
+// } while (a < 20);
+
+// fazer calculadora
