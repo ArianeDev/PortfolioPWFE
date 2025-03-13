@@ -5,15 +5,12 @@ form07.addEventListener('submit', function(event){
 
     const resultado07 = document.getElementById('resultado07');
 
-    let peso = document.getElementById('peso').value;
-    let altura = document.getElementById('altura').value;
+    let peso = Number(document.getElementById('peso').value);
+    let altura = parseFloat(document.getElementById('alt').value);
 
-    peso = parseFloat(peso);
-    altura = parseFloat(altura);
-
-    let IMC = peso/altura*altura;
+    let IMC = peso/(altura*altura);
 
     console.log(IMC, altura, peso);
 
-    resultado07.innerHTML = `<p>O IMC é ${IMC}</p>`;
+    resultado07.innerHTML = `<p>O IMC é ${IMC.toFixed(2)}</p>`;
 })
