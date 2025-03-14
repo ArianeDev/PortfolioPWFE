@@ -77,9 +77,11 @@ nav{
 		font-size: 8rem;
 		letter-spacing: 0.5rem;
 		color: rgb(182, 182, 182);
+		cursor: default;
 	}
 	& p {
 		color: rgb(182, 182, 182);
+		cursor: default;
 	}
 }
 #javascript {

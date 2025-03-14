@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lista de exercício</title>
-        <link rel="stylesheet" href="Style/style.css">
+        <link rel="stylesheet" href="../Style/style.css">
         <script src="JS/exercicio01.js" defer></script>
         <script src="JS/exercicio02.js" defer></script>
         <script src="JS/exercicio03.js" defer></script>
@@ -157,6 +157,7 @@
                 <section id="exercicio">
                     <h2>Exercício 8 - Verifica se o ano é bissexto.</h2>
                     <form method="get" id="form08">
+                        <div class="input"></div>
                         <div class="input">
                             <label>Digite o ano:</label>
                             <input type="number" name="ano" id="ano">
@@ -179,7 +180,6 @@
                 <section id="exercicio">
                     <h2>Exercício 10 - Exibe uma tabuada.</h2>
                     <form method="get" id="form10">
-                        <div class="input"></div>
                         <div class="input">
                             <label>Digite um número de 1 à 9:</label>
                             <input type="number" name="numTab" id="numTab">
@@ -193,7 +193,12 @@
                     <form method="get" id="form11">
                         <div class="input">
                             <label>Digite sua joagada:</label>
-                            <input type="text" name="jogo" id="jogo">
+                            <select name="jogo" id="jogo">
+                                <option value="" disabled>Escolha uma opção</option>
+                                <option value="pedra">Pedra</option>
+                                <option value="papel">Papel</option>
+                                <option value="tesoura">tesoura</option>
+                            </select>
                         </div>
                         <input type="submit" value="Ver resposta" data-modal="modal-11" class="openModal">
                     </form>
@@ -322,6 +327,9 @@
                 </dialog>
             </div>
         </main>
+        <footer>
+
+        </footer>
         <script src="JS/modal.js"></script>
     </body>
  </html>

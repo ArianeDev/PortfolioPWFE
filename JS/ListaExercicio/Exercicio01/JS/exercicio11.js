@@ -5,8 +5,12 @@ const jogadas = ['pedra', 'tesoura', 'papel'];
 form11.addEventListener('submit', function(event){
     event.preventDefault();
 
-    let jogada_usu = document.getElementById('jogo').value;
+    let selectvalor = document.getElementById('jogo');
     let random = jogadas[Math.floor(Math.random() * jogadas.length)]
+
+    const jogada_usu = selectvalor.value;
+
+    console.log(jogada_usu)
 
     if (jogada_usu == random){
         resultado11.innerHTML = `<p>Deu empate</p>`;
