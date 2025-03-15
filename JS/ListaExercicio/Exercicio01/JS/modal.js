@@ -16,7 +16,6 @@ closeButtons.forEach(button => {
 	button.addEventListener('click', () => {
 		const modalId = button.getAttribute('data-modal');
 		const modal = document.getElementById(modalId);
-		console.log(modal);
 
 		modal.close();
 	})

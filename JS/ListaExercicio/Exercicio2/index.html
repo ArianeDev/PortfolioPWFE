@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../Style/style.css">
         <title>Aula 2 | Lista de exercício 2</title>
+        <script src="JS/exercicio02.js" defer></script>
+        <script src="JS/exercicio03.js" defer></script>
     </head>
     <body>
         <main>
@@ -42,8 +44,76 @@
                 <p>Aula 02</p>
             </section>
             <div class="conteinerExer">
+                <!-- Exercício 02 -->
+                <section id="exercicio">
+                    <h2>Inverter frases</h2>
+                    <form id="form02">
+                        <div class="input">
+                            <label>Digite uma frase: </label>
+                            <input type="text" name="frase" id="frase">
+                        </div>
+                        <input type="submit" value="Inverter" data-modal="modal-2" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 03 -->
+                <section id="exercicio">
+                    <h2>Separar frases</h2>
+                    <form id="form03">
+                        <div class="input">
+                            <label>Digite uma frase: </label>
+                            <input type="text" name="frase03" id="frase03">
+                        </div>
+                        <input type="submit" value="Inverter" data-modal="modal-3" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 04 -->
+                <section id="exercicio">
+                    <h2>Idade para tirar a carteira de motorista</h2>
+                    <form id="form04">
+                        <div class="input">
+                            <label>Digite sua idade: </label>
+                            <input type="number" name="idade" id="idade">
+                        </div>
+                        <input type="submit" value="Verificar" data-modal="modal-4" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Modals -->
+
+                <!-- Modal 02 -->
+                <dialog id="modal-2">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-2">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado02"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 03 -->
+                <dialog id="modal-3">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-3">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado03"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 04 -->
+                <dialog id="modal-4">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-4">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado04"></div>
+                    </div>
+                </dialog>
 
             </div>
         </main>
+        <script src="../Exercicio01/JS/modal.js"></script>
     </body>
  </html>

@@ -154,6 +154,10 @@ a{
 	}
 }
 
+.resposta{
+	font-weight: bolder;
+}
+
 footer{
 	background-color: aliceblue;
 	height: 2vh;
