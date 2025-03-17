@@ -8,7 +8,5 @@ form06.addEventListener('submit', function(event){
 
     minutos = horas*60;
 
-    if(horas/)
-
     resultado06.innerHTML = `<p>A quantidade de minutos que tem em ${horas} é de:</p><p class="resposta">${minutos}</p>`;
 })

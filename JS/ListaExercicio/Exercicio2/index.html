@@ -10,6 +10,8 @@
         <script src="JS/exercicio04.js" defer></script>
         <script src="JS/exercicio05.js" defer></script>
         <script src="JS/exercicio06.js" defer></script>
+        <script src="JS/exercicio07.js" defer></script>
+        <script src="JS/exercicio08.js" defer></script>
     </head>
     <body>
         <main>
@@ -116,6 +118,64 @@
                     </form>
                 </section>
 
+                <!-- Exercício 07 -->
+                <section id="exercicio">
+                    <h2>Converter valor para células</h2>
+                    <form id="form07">
+                        <div class="input">
+                            <label>Digite um valor: </label>
+                            <input type="text" name="celulas" id="celulas">
+                        </div>
+                        <input type="submit" value="Converter" data-modal="modal-7" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 08 -->
+                <section id="exercicio">
+                    <h2>Raiz quadrada</h2>
+                    <form id="form08">
+                        <div class="input">
+                            <label>Digite um valor: </label>
+                            <input type="number" name="raizQuad" id="raizQuad">
+                        </div>
+                        <input type="submit" value="Calcular" data-modal="modal-8" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 09 -->
+                <section id="exercicio">
+                    <h2>Formulário</h2>
+                    <form id="form09">
+                        <div class="input">
+                            <label>Digite seu nome: </label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div class="input">
+                            <label>Digite seu endereço: </label>
+                            <input type="text" name="endereco" id="endereco">
+                        </div>
+                        <div class="input">
+                            <label>Qual o seu sexo? </label>
+                            <input type="radio" name="sexo" id="F">Feminino
+                            <input type="radio" name="sexo" id="M">Masculino 
+                            <input type="radio" name="sexo" id="Outro">Outro
+                        </div>
+                        <div class="input">
+                            <label>Digite seu telefone: </label>
+                            <input type="text" name="telefone" id="telefone">
+                        </div>
+                        <div class="input">
+                            <label>Digite seu celular: </label>
+                            <input type="text" name="celular" id="celular">
+                        </div>
+                        <div class="input">
+                            <label>Digite seu email: </label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <input type="submit" value="Enviar" data-modal="modal-9" class="openModal">
+                    </form>
+                </section>
+
                 <!-- Modals -->
 
                 <!-- Modal 02 -->
@@ -165,6 +225,26 @@
                     </div>
                     <div class="result">
                         <div class="resultado" id="resultado06"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 07 -->
+                <dialog id="modal-7">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-7">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado07"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 08 -->
+                <dialog id="modal-8">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-8">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado08"></div>
                     </div>
                 </dialog>
 
