@@ -7,6 +7,9 @@
         <title>Aula 2 | Lista de exercício 2</title>
         <script src="JS/exercicio02.js" defer></script>
         <script src="JS/exercicio03.js" defer></script>
+        <script src="JS/exercicio04.js" defer></script>
+        <script src="JS/exercicio05.js" defer></script>
+        <script src="JS/exercicio06.js" defer></script>
     </head>
     <body>
         <main>
@@ -72,11 +75,44 @@
                 <section id="exercicio">
                     <h2>Idade para tirar a carteira de motorista</h2>
                     <form id="form04">
+                        <div class="input"></div>
                         <div class="input">
                             <label>Digite sua idade: </label>
                             <input type="number" name="idade" id="idade">
                         </div>
                         <input type="submit" value="Verificar" data-modal="modal-4" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 05 -->
+                <section id="exercicio">
+                    <h2>Organiza para ordem crescente</h2>
+                    <form id="form05">
+                        <div class="input">
+                            <label>Digite um número: </label>
+                            <input type="number" name="num1" id="num1">
+                        </div>
+                        <div class="input">
+                            <label>Digite outro número: </label>
+                            <input type="number" name="num2" id="num2">
+                        </div>
+                        <div class="input">
+                            <label>Digite outro número: </label>
+                            <input type="number" name="num3" id="num3">
+                        </div>
+                        <input type="submit" value="Organizar" data-modal="modal-5" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 06 -->
+                <section id="exercicio">
+                    <h2>Converter horas para minutos</h2>
+                    <form id="form06">
+                        <div class="input">
+                            <label>Quantas horas deseja converter? </label>
+                            <input type="text" name="hora" id="hora">
+                        </div>
+                        <input type="submit" value="Converter" data-modal="modal-6" class="openModal">
                     </form>
                 </section>
 
@@ -109,6 +145,26 @@
                     </div>
                     <div class="result">
                         <div class="resultado" id="resultado04"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 05 -->
+                <dialog id="modal-5">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-5">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado05"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 06 -->
+                <dialog id="modal-6">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-6">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado06"></div>
                     </div>
                 </dialog>
 
