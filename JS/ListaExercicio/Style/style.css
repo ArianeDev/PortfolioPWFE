@@ -83,16 +83,12 @@ a{
 		color: rgb(182, 182, 182);
 	}
 }
+
 .conteinerExer{
 	display: grid;
 	justify-content: space-evenly;
 	grid-template-columns: 35% 35%;
 	gap: 3rem;
-
-	/* display: grid;
-	grid-template-columns: 40%;
-	margin: 0 5rem;
-	gap: 3rem; */
 
 	& #exercicio {
 		display: flex;
@@ -157,6 +153,13 @@ a{
 			}
 		}
 	}
+}
+
+.vertical{
+	display: grid;
+	grid-template-columns: 40%;
+	margin: 0 5rem;
+	gap: 3rem;
 }
 
 .resposta{

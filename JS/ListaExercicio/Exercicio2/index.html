@@ -12,6 +12,11 @@
         <script src="JS/exercicio06.js" defer></script>
         <script src="JS/exercicio07.js" defer></script>
         <script src="JS/exercicio08.js" defer></script>
+        <script src="JS/exercicio09.js" defer></script>
+        <script src="JS/exercicio10.js" defer></script>
+        <!-- <script src="JS/exercicio11.js" defer></script>
+        <script src="JS/exercicio12.js" defer></script>
+        <script src="JS/exercicio13.js" defer></script> -->
     </head>
     <body>
         <main>
@@ -48,7 +53,7 @@
                 <h1>Lista de exercícíos</h1>
                 <p>Aula 02</p>
             </section>
-            <div class="conteinerExer">
+            <div class="conteinerExer vertical">
                 <!-- Exercício 02 -->
                 <section id="exercicio">
                     <h2>Inverter frases</h2>
@@ -156,9 +161,18 @@
                         </div>
                         <div class="input">
                             <label>Qual o seu sexo? </label>
-                            <input type="radio" name="sexo" id="F">Feminino
-                            <input type="radio" name="sexo" id="M">Masculino 
-                            <input type="radio" name="sexo" id="Outro">Outro
+                            <div>
+                                <input type="radio" name="sexo" id="F" value="Feminino">
+                                <label for="Feminino">Feminino</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="sexo" id="M"> 
+                                <label for="Masculino">Masculino</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="sexo" id="Outro">
+                                <label for="Outro">Outro</label>
+                            </div>
                         </div>
                         <div class="input">
                             <label>Digite seu telefone: </label>
@@ -173,6 +187,19 @@
                             <input type="text" name="email" id="email">
                         </div>
                         <input type="submit" value="Enviar" data-modal="modal-9" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 10 -->
+                <section id="exercicio">
+                    <h2>Imposto de renda(Faixas)</h2>
+                    <p>Digite sem ponto ou vírgula.</p>
+                    <form id="form10">
+                        <div class="input">
+                            <label>Digite seu salário: </label>
+                            <input type="text" name="salario" id="salario">
+                        </div>
+                        <input type="submit" value="Calcular" data-modal="modal-10" class="openModal">
                     </form>
                 </section>
 
@@ -245,6 +272,26 @@
                     </div>
                     <div class="result">
                         <div class="resultado" id="resultado08"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 09 -->
+                <dialog id="modal-9">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-9">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado09"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 10 -->
+                <dialog id="modal-10">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-10">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado10"></div>
                     </div>
                 </dialog>
 
