@@ -26,4 +26,8 @@ resposta02.innerHTML = `<p>O valor da média é ${media.toFixed(2)}</p>`;
 const resposta05 = document.getElementById('responsta05');
 
 const nomes = ["Joyce", "Ariane", "Nicolas", "Thifany", "João", "Gabriela", "Geovanna", "Resende", "Evellyn", "Lívia"];
+const nome = document.getElementById('nome');
 
+for(nome in nomes){
+    resposta05.innerHTML= `<p>O indice do nome é</p>`
+}
