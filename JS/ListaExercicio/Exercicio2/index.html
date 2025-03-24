@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../Style/style.css">
         <title>Aula 2 | Lista de exercício 2</title>
+        <script src="JS/exercicio01.js" defer></script>
         <script src="JS/exercicio02.js" defer></script>
         <script src="JS/exercicio03.js" defer></script>
         <script src="JS/exercicio04.js" defer></script>
@@ -14,9 +15,9 @@
         <script src="JS/exercicio08.js" defer></script>
         <script src="JS/exercicio09.js" defer></script>
         <script src="JS/exercicio10.js" defer></script>
-        <!-- <script src="JS/exercicio11.js" defer></script>
+        <script src="JS/exercicio11.js" defer></script>
         <script src="JS/exercicio12.js" defer></script>
-        <script src="JS/exercicio13.js" defer></script> -->
+        <script src="JS/exercicio13.js" defer></script>
     </head>
     <body>
         <main>
@@ -54,6 +55,31 @@
                 <p>Aula 02</p>
             </section>
             <div class="conteinerExer vertical">
+                <!-- Exercício 01 -->
+                <section id="exercicio">
+                    <h2>Inverter frases</h2>
+                    <form id="form01">
+                        <div class="input">
+                            <label>Digite o primeiro número: </label>
+                            <input type="text" name="cal_num_1" id="cal_num_1">
+                        </div>
+                        <div class="input">
+                            <label>Digite o segundo número: </label>
+                            <input type="text" name="cal_num_2" id="cal_num_2">
+                        </div>
+                        <div class="input">
+                            <label>Digite o primeiro número: </label>
+                            <select name="operacao" id="operacao">
+                                <option value="soma">Somar</option>
+                                <option value="subtração">Substrair</option>
+                                <option value="multiplicação">Multiplicar</option>
+                                <option value="divição">Dividir</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Calcular" data-modal="modal-1" class="openModal">
+                    </form>
+                </section>
+
                 <!-- Exercício 02 -->
                 <section id="exercicio">
                     <h2>Inverter frases</h2>
@@ -203,7 +229,74 @@
                     </form>
                 </section>
 
+                <!-- Exercício 11 -->
+                <section id="exercicio">
+                    <h2>Cáculos do INSS</h2>
+                    <p>Digite sem ponto ou vírgula.</p>
+                    <form id="form11">
+                        <div class="input">
+                            <label>Digite seu salário: </label>
+                            <input type="text" name="salarioInss" id="salarioInss">
+                        </div>
+                        <div class="input">
+                            <label>Digite o aliquota: </label>
+                            <input type="text" name="aliquota" id="aliquota">
+                        </div>
+                        <input type="submit" value="Calcular" data-modal="modal-11" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 12 -->
+                <section id="exercicio">
+                    <h2>Calcular juros compostos</h2>
+                    <form id="form12">
+                        <div class="input">
+                            <label>Digite o capital inicial: </label>
+                            <input type="number" name="capitalInicial" id="capitalInicial">
+                        </div>
+                        <div class="input">
+                            <label>Digite a taxa de juros: </label>
+                            <input type="number" name="taxaJuros" id="taxaJuros">
+                        </div>
+                        <div class="input">
+                            <label>Digite o período: </label>
+                            <input type="number" name="tempo" id="tempo">
+                        </div>
+                        <input type="submit" value="Calcular" data-modal="modal-12" class="openModal">
+                    </form>
+                </section>
+
+                <!-- Exercício 13 -->
+                <section id="exercicio">
+                    <h2>Simulador de financiamento</h2>
+                    <form id="form13">
+                        <div class="input">
+                            <label>Digite o valor do financiamento: </label>
+                            <input type="number" name="valorFinanciamento" id="valorFinanciamento">
+                        </div>
+                        <div class="input">
+                            <label>Digite a taxa de juros: </label>
+                            <input type="text" name="taxaJurosfinan" id="taxaJurosfinan">
+                        </div>
+                        <div class="input">
+                            <label>Digite o número de parcelas: </label>
+                            <input type="number" name="tempo" id="tempo">
+                        </div>
+                        <input type="submit" value="Calcular" data-modal="modal-13" class="openModal">
+                    </form>
+                </section>
+
                 <!-- Modals -->
+
+                <!-- Modal 01 -->
+                <dialog id="modal-1">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-1">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado01"></div>
+                    </div>
+                </dialog>
 
                 <!-- Modal 02 -->
                 <dialog id="modal-2">
@@ -292,6 +385,36 @@
                     </div>
                     <div class="result">
                         <div class="resultado" id="resultado10"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 11 -->
+                <dialog id="modal-11">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-11">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado11"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 12 -->
+                <dialog id="modal-12">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-12">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado12"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 13 -->
+                <dialog id="modal-13">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-13">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado13"></div>
                     </div>
                 </dialog>
 
