@@ -42,7 +42,7 @@
                 <h1>Lista de exercícíos</h1>
                 <p>Aula 04</p>
             </section>
-            <div class="conteinerExer">
+            <div class="conteinerExer vertical">
                 <!-- Exercício 01 -->
                 <section id="exercicio">
                     <h2>Dobrar os valores de uma Array</h2>
@@ -55,17 +55,43 @@
                     <div id="resposta02"></div>
                 </section>
 
+                <!-- Exercício 03 -->
+                <section id="exercicio">
+                    <h2>Média de 20 idades</h2>
+                    <form id="form03">
+                        <div class="input">
+                            <label>Digite 20 idades: </label>
+                            <input type="text" name="idade" id="idade">
+                        </div>
+                        <input type="submit" value="Verificar" oninput="Adicionar()">
+                    </form>
+                    <div id="resposta03"></div>
+                </section>
+
                 <!-- Exercício 05 -->
                 <section id="exercicio">
-                    <h2>Média de oito notas</h2>
-                    <form action="">
+                    <h2>Verifique se o seu nome esta na Array</h2>
+                    <form id="form05">
                         <div class="input">
                             <label>Digite um nome: </label>
                             <input type="text" name="nome" id="nome">
                         </div>
-                        <input type="submit" value="Verificar" data-modal="modal-2" class="openModal">
+                        <input type="submit" value="Verificar">
                     </form>
                     <div id="resposta05"></div>
+                </section>
+
+                <!-- Exercício 07 -->
+                <section id="exercicio">
+                    <h2>Verifique se o seu nome esta na Array</h2>
+                    <form id="form07">
+                        <div class="input" id="exercicio07">
+                            <label>Digite um nome: </label>
+                            <input type="text" name="nome2" id="nome2">
+                        </div>
+                    </form>
+                    <input type="submit" value="Começar" id="btn_add" onclick="InputNomes()">
+                    <div id="resposta07"></div>
                 </section>
             </div>
         </main>
