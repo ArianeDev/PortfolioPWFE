@@ -1,25 +1,47 @@
-// Código que lê 8 números e verifica se estão entre 100 e 200
+// Neste arquivo esta o exercício 6 e 7
 
-const form05 = document.getElementById('form05');
-const resultado05 = document.getElementById('resultado05');
-const alertUsu05 = document.getElementById('alertUsu05');
+// Exercício 6 - Código que verifica se o nome que o usuário digitou esta na lista de nomes
 
-const btn_send_05 = document.getElementById('btn_send_05')
-const btn_add_05 = document.getElementById('btn_add_05');
+const resultado06 = document.getElementById('resultado06');
+const form06 = document.getElementById('form06');
 
-let list_num_05 = [];
+const nomes = ["Joyce", "Ariane", "Nicolas", "Thifany", "João", "Gabriela", "Geovanna", "Resende", "Evellyn", "Lívia"];
 
-function AdicionarNum_05(event){
+form06.addEventListener('submit', function(event){
     event.preventDefault();
 
-    let num = document.getElementById('num05').value;
+    let nome = document.getElementById('nome_06').value;
 
-    if(num === ""){
-        alertUsu05.innerHTML = `<p>Preencha o campo!</p>`;
+    for(let i in nomes){
+        if(nomes[i] === nome){
+            resultado06.innerHTML = `<p>O indice do nome é ${i}</p>`;
+            return;
+        }
+    }
+    resultado06.innerHTML = `<p>Nome não foi encontrado</p>`;
+
+    document.getElementById('nome_06').value = '';
+})
+
+// Exercício 7 - Código que verifica se o nome que o usuário digitou esta na lista de nomes, dando 5 tentivas para o usuário
+const form07 = document.getElementById('form07');
+const resultado07 = document.getElementById('resultado07');
+const alertUsu07 = document.getElementById('alertUsu07');
+
+const btn_send_07 = document.getElementById('btn_send_07')
+const btn_add_07 = document.getElementById('btn_add_07');
+
+
+function AdicionarNomes(event){
+    event.preventDefault();
+
+    let nome_07 = document.getElementById('nome_07').value;
+
+    if(nome_07 === ""){
+        alertUsu07.innerHTML = `<p>Preencha o campo!</p>`;
         return;
     }
 
-    num = parseInt(num);
     
     if(num >= 100 && num <= 200){
 
@@ -51,7 +73,7 @@ function AdicionarNum_05(event){
     document.getElementById('num05').value = "";
 }
 
-document.getElementById('btn_add_05').addEventListener('click', AdicionarNum_05);
+document.getElementById('btn_add_07').addEventListener('click', AdicionarNomes);
 
 form05.addEventListener('submit', function(event){
     event.preventDefault();

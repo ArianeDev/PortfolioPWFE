@@ -1,3 +1,0 @@
-1 - Não abriu o modal - estava sem: event.preventDefault();
-2 - Apareceu as variáveis como Nan - estava sem: .value
-3 - Não estava parando na tela o modal - não estava importado o arquivo do js

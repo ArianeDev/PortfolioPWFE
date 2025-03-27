@@ -9,6 +9,7 @@
         <script src="JS/exercicio03.js" defer></script>
         <script src="JS/exercicio04.js" defer></script>
         <script src="JS/exercicio05.js" defer></script>
+        <script src="JS/exercicio06_07.js" defer></script>
     </head>
     <body>
         <main>
@@ -103,17 +104,31 @@
                     </form>
                 </section>
 
-                <!-- Exercício 07 -->
+                <!-- Exercício 06 -->
                 <section id="exercicio">
                     <h2>Verifique se o seu nome esta na Array</h2>
-                    <form id="form07">
-                        <div class="input" id="exercicio07">
+                    <form id="form06">
+                        <div class="input">
                             <label>Digite um nome: </label>
-                            <input type="text" name="nome2" id="nome2">
+                            <input type="text" name="nome_06" id="nome_06">
                         </div>
+                        <input type="submit" value="Começar" data-modal="modal-6" class="openModal btn_model ativado">
                     </form>
-                    <input type="submit" value="Começar" id="btn_add" onclick="InputNomes()">
-                    <div id="resposta07"></div>
+                </section>
+
+                <!-- Exercício 07 -->
+                <section id="exercicio">
+                    <h2>Tente acertar um nome</h2>
+                    <p>Você terá 5 tentativas.</p>
+                    <form id="form07">
+                        <div class="input">
+                            <label>Digite um número: </label>
+                            <input type="text" name="nome_07" id="nome_07">
+                        </div>
+                        <p id="alertUsu07"></p>
+                        <input type="submit" value="Adicionar" id="btn_add_07" class="btn_model ativado" >
+                        <input type="submit" value="Verificar" id="btn_send_07" class="openModal btn_model desativado" data-modal="modal-5">
+                    </form>
                 </section>
 
                 <!-- Modal 03 -->
@@ -143,6 +158,26 @@
                     </div>
                     <div class="result">
                         <div class="resultado" id="resultado05"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 06 --> 
+                <dialog id="modal-6">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-6">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado06"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 07 --> 
+                <dialog id="modal-7">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-7">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado07"></div>
                     </div>
                 </dialog>
             </div>
