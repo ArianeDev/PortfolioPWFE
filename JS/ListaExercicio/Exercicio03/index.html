@@ -68,12 +68,13 @@
                             <input type="text" name="cal_num_2" id="cal_num_2">
                         </div>
                         <div class="input">
-                            <label>Digite o primeiro número: </label>
+                            <label>Selecione a operação: </label>
                             <select name="operacao" id="operacao">
+                                <option value="" disabled selected>Selecione umas das opções...</option>
                                 <option value="soma">Somar</option>
                                 <option value="subtração">Substrair</option>
                                 <option value="multiplicação">Multiplicar</option>
-                                <option value="divição">Dividir</option>
+                                <option value="divisão">Dividir</option>
                             </select>
                         </div>
                         <input type="submit" value="Calcular" data-modal="modal-1" class="openModal">
@@ -119,21 +120,15 @@
 
                 <!-- Exercício 05 -->
                 <section id="exercicio">
-                    <h2>Organiza para ordem crescente</h2>
+                    <h2>Organiza para ordem crescente 3 números</h2>
                     <form id="form05">
                         <div class="input">
                             <label>Digite um número: </label>
                             <input type="number" name="num1" id="num1">
                         </div>
-                        <div class="input">
-                            <label>Digite outro número: </label>
-                            <input type="number" name="num2" id="num2">
-                        </div>
-                        <div class="input">
-                            <label>Digite outro número: </label>
-                            <input type="number" name="num3" id="num3">
-                        </div>
-                        <input type="submit" value="Organizar" data-modal="modal-5" class="openModal">
+                        <p id="alert"></p>
+                        <input type="submit" value="Adicionar" id="btn_add" class="btn_model ativado">
+                        <input type="submit" value="Organizar" data-modal="modal-5" class="openModal btn_model desativado" id="btn_send">
                     </form>
                 </section>
 
@@ -145,7 +140,7 @@
                             <label>Quantas horas deseja converter? </label>
                             <input type="text" name="hora" id="hora">
                         </div>
-                        <input type="submit" value="Converter" data-modal="modal-6" class="openModal">
+                        <input type="submit" value="Converter" data-modal="modal-6" class="openModal btn_model ativado">
                     </form>
                 </section>
 
@@ -157,7 +152,7 @@
                             <label>Digite um valor: </label>
                             <input type="text" name="celulas" id="celulas">
                         </div>
-                        <input type="submit" value="Converter" data-modal="modal-7" class="openModal">
+                        <input type="submit" value="Converter" data-modal="modal-7" class="openModal btn_model ativado">
                     </form>
                 </section>
 
@@ -169,7 +164,7 @@
                             <label>Digite um valor: </label>
                             <input type="number" name="raizQuad" id="raizQuad">
                         </div>
-                        <input type="submit" value="Calcular" data-modal="modal-8" class="openModal">
+                        <input type="submit" value="Calcular" data-modal="modal-8" class="openModal btn_model ativado">
                     </form>
                 </section>
 
@@ -192,11 +187,11 @@
                                 <label for="Feminino">Feminino</label>
                             </div>
                             <div>
-                                <input type="radio" name="sexo" id="M"> 
+                                <input type="radio" name="sexo" id="M" value="Masculino"> 
                                 <label for="Masculino">Masculino</label>
                             </div>
                             <div>
-                                <input type="radio" name="sexo" id="Outro">
+                                <input type="radio" name="sexo" id="O" value="Outros">
                                 <label for="Outro">Outro</label>
                             </div>
                         </div>
@@ -212,7 +207,7 @@
                             <label>Digite seu email: </label>
                             <input type="text" name="email" id="email">
                         </div>
-                        <input type="submit" value="Enviar" data-modal="modal-9" class="openModal">
+                        <input type="submit" value="Enviar" data-modal="modal-9" class="openModal btn_model ativado">
                     </form>
                 </section>
 
@@ -225,7 +220,7 @@
                             <label>Digite seu salário: </label>
                             <input type="text" name="salario" id="salario">
                         </div>
-                        <input type="submit" value="Calcular" data-modal="modal-10" class="openModal">
+                        <input type="submit" value="Calcular" data-modal="modal-10" class="openModal btn_model ativado">
                     </form>
                 </section>
 
@@ -238,11 +233,7 @@
                             <label>Digite seu salário: </label>
                             <input type="text" name="salarioInss" id="salarioInss">
                         </div>
-                        <div class="input">
-                            <label>Digite o aliquota: </label>
-                            <input type="text" name="aliquota" id="aliquota">
-                        </div>
-                        <input type="submit" value="Calcular" data-modal="modal-11" class="openModal">
+                        <input type="submit" value="Calcular" data-modal="modal-11" class="openModal btn_model ativado">
                     </form>
                 </section>
 
@@ -262,7 +253,7 @@
                             <label>Digite o período: </label>
                             <input type="number" name="tempo" id="tempo">
                         </div>
-                        <input type="submit" value="Calcular" data-modal="modal-12" class="openModal">
+                        <input type="submit" value="Calcular" data-modal="modal-12" class="openModal btn_model ativado">
                     </form>
                 </section>
 
@@ -276,13 +267,13 @@
                         </div>
                         <div class="input">
                             <label>Digite a taxa de juros: </label>
-                            <input type="text" name="taxaJurosfinan" id="taxaJurosfinan">
+                            <input type="number" name="taxaJurosfinan" id="taxaJurosfinan">
                         </div>
                         <div class="input">
                             <label>Digite o número de parcelas: </label>
-                            <input type="number" name="tempo" id="tempo">
+                            <input type="number" name="numPar" id="numPar">
                         </div>
-                        <input type="submit" value="Calcular" data-modal="modal-13" class="openModal">
+                        <input type="submit" value="Calcular" data-modal="modal-13" class="openModal btn_model ativado">
                     </form>
                 </section>
 
@@ -420,6 +411,6 @@
 
             </div>
         </main>
-        <script src="../Exercicio01/JS/modal.js"></script>
+        <script src="../Exercicio02/JS/modal.js"></script>
     </body>
  </html>

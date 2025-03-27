@@ -132,27 +132,35 @@ a{
 					border: 0.15rem solid rgb(182, 182, 182);
 				}
 			}
-			& input[type="submit"] {
-				height: 5vh;
-				border: none;
-				outline: none;
-				margin-top: 1.5rem;
-				padding-left: 0.5rem;
-				border-radius: 0.5rem;
-				background-color: rgba(73, 4, 202, 0.9);
-				cursor: pointer;
-				font-size: 0.9rem;
-				font-weight: 600;
-				color: rgb(224, 224, 224);
-				transition: .5s all;
-				
-				&:hover {
-					background-color: rgba(187, 71, 237, 0.5);
-					color: rgb(231, 231, 231);
-				}
-			}
 		}
 	}
+}
+
+.btn_model {
+	height: 5vh;
+	border: none;
+	outline: none;
+	margin-top: 1.5rem;
+	padding-left: 0.5rem;
+	border-radius: 0.5rem;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: rgb(224, 224, 224);
+	transition: .5s all;
+}
+.ativado {
+	background-color: rgba(73, 4, 202, 0.9);
+	cursor: pointer;
+
+	&:hover {
+		background-color: rgba(187, 71, 237, 0.5);
+		color: rgb(231, 231, 231);
+	}
+}
+.desativado {
+	background-color: rgb(203, 203, 203);
+	color: rgb(165, 165, 165);
+	cursor: default;
 }
 
 .vertical{
@@ -171,4 +179,20 @@ footer{
 	height: 2vh;
 	width: 100%;
 	margin-top: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+	.vertical{
+		display: grid;
+		grid-template-columns: 80%;
+		margin: 0 5rem;
+		gap: 3rem;
+	}
+
+	#text{
+		h1{
+			text-align: center;
+		}
+	}
+		
 }
