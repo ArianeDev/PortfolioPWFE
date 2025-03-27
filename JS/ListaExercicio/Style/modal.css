@@ -6,6 +6,11 @@ dialog::backdrop {
 	padding: 6rem 0.5rem;
 }
 
+.idades {
+	width: 20%;
+	height: 25vh;
+}
+
 dialog {
 	width: 15%;
 	height: 15vh;
@@ -35,7 +40,6 @@ dialog {
 	& .result {
 		display: flex;
 		justify-content: center;
-		align-items: center;
 		height: 13vh;
 
 		& p {

@@ -151,6 +151,7 @@ a{
 .ativado {
 	background-color: rgba(73, 4, 202, 0.9);
 	cursor: pointer;
+	transition: .5 all;
 
 	&:hover {
 		background-color: rgba(187, 71, 237, 0.5);
@@ -161,6 +162,7 @@ a{
 	background-color: rgb(203, 203, 203);
 	color: rgb(165, 165, 165);
 	cursor: default;
+	transition: .5 all;
 }
 
 .vertical{

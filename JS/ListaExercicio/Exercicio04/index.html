@@ -6,6 +6,9 @@
         <title>Aula 04 | Lista de exercícios</title>
         <link rel="stylesheet" href="../Style/style.css">
         <script src="JS/exercicios.js" defer></script>
+        <script src="JS/exercicio03.js" defer></script>
+        <script src="JS/exercicio04.js" defer></script>
+        <script src="JS/exercicio05.js" defer></script>
     </head>
     <body>
         <main>
@@ -57,28 +60,47 @@
 
                 <!-- Exercício 03 -->
                 <section id="exercicio">
-                    <h2>Média de 20 idades</h2>
+                    <h2>Média de idades</h2>
+                    <p>Digite 20 idades</p>
                     <form id="form03">
                         <div class="input">
                             <label>Digite 20 idades: </label>
                             <input type="text" name="idade" id="idade">
                         </div>
-                        <input type="submit" value="Verificar" oninput="Adicionar()">
+                        <p id="alertUsu03"></p>
+                        <input type="submit" value="Adicionar" id="btn_add_03" class="btn_model ativado" >
+                        <input type="submit" value="Calcular" id="btn_send_03" class="openModal btn_model desativado" data-modal="modal-3">
                     </form>
-                    <div id="resposta03"></div>
+                </section>
+
+                <!-- Exercício 04 -->
+                <section id="exercicio">
+                    <h2>Verificar números pares</h2>
+                    <p>Digite 10 números.</p>
+                    <form id="form04">
+                        <div class="input">
+                            <label>Digite o número: </label>
+                            <input type="text" name="numPar04" id="numPar04">
+                        </div>
+                        <p id="alertUsu04"></p>
+                        <input type="submit" value="Adicionar" id="btn_add_04" class="btn_model ativado" >
+                        <input type="submit" value="Calcular" id="btn_send_04" class="openModal btn_model desativado" data-modal="modal-4">
+                    </form>
                 </section>
 
                 <!-- Exercício 05 -->
                 <section id="exercicio">
-                    <h2>Verifique se o seu nome esta na Array</h2>
+                    <h2>Verificar os números inseridos</h2>
+                    <p>Digite números entre 100 a 200.</p>
                     <form id="form05">
                         <div class="input">
-                            <label>Digite um nome: </label>
-                            <input type="text" name="nome" id="nome">
+                            <label>Digite um número: </label>
+                            <input type="text" name="num05" id="num05">
                         </div>
-                        <input type="submit" value="Verificar">
+                        <p id="alertUsu05"></p>
+                        <input type="submit" value="Adicionar" id="btn_add_05" class="btn_model ativado" >
+                        <input type="submit" value="Verificar" id="btn_send_05" class="openModal btn_model desativado" data-modal="modal-5">
                     </form>
-                    <div id="resposta05"></div>
                 </section>
 
                 <!-- Exercício 07 -->
@@ -93,7 +115,38 @@
                     <input type="submit" value="Começar" id="btn_add" onclick="InputNomes()">
                     <div id="resposta07"></div>
                 </section>
+
+                <!-- Modal 03 -->
+                <dialog id="modal-3" class="idades">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-3">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado03"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 04 -->
+                <dialog id="modal-4" class="idades">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-4">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado04"></div>
+                    </div>
+                </dialog>
+
+                <!-- Modal 05 --> 
+                <dialog id="modal-5" class="idades">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-5">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado05"></div>
+                    </div>
+                </dialog>
             </div>
         </main>
+        <script src="../Exercicio02/JS/modal.js"></script>
     </body>
 </html>
