@@ -42,6 +42,8 @@ btn_exemplo3.addEventListener('click', function(){
     })
 })
 
+const ex_adc_exc = document.getElementById('exemploAdc_Exc');
+
 // inserindo no final do array
 ex_adc_exc.innerHTML = `<p class="text">Lista original: ${numeros} </p>`
 // já devo colocar o valor que quero no final da fila

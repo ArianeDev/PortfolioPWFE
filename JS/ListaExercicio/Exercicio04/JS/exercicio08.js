@@ -1,5 +1,3 @@
-// Exercício 8 e 9
-
 // Exercício 8 - Código que leia 6 números guardando em uma array para depois guardar a metade em outra
 const form08 = document.getElementById('form08');
 const resultado08 = document.getElementById('resultado08');
@@ -49,7 +47,7 @@ form08.addEventListener('submit', function(event){
 
     let metade_list_num = list_num_08.map(num => num / 2);
 
-    resultado08.innerHTML = `<p>Os números digitados foram: ${list_num_08}</p><p>A metade dos números é: ${metade_list_num.join(', ')}</p>`;
+    resultado08.innerHTML = `<p>Os números digitados foram: ${list_num_08}</p><p>A metade dos números é: <br> ${metade_list_num.join(', ')}</p>`;
 
     alertUsu08.innerHTML = '';
     document.getElementById('num_08').removeAttribute('readonly');

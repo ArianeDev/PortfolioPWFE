@@ -10,7 +10,8 @@
         <script src="JS/exercicio04.js" defer></script>
         <script src="JS/exercicio05.js" defer></script>
         <script src="JS/exercicio06_07.js" defer></script>
-        <script src="JS/exercicio08_09.js" defer></script>
+        <script src="JS/exercicio08.js" defer></script>
+        <script src="JS/exercicio09.js" defer></script>
     </head>
     <body>
         <main>
@@ -128,7 +129,7 @@
                         </div>
                         <p id="alertUsu07"></p>
                         <input type="submit" value="Adicionar" id="btn_add_07" class="btn_model ativado" >
-                        <input type="submit" value="Verificar" id="btn_send_07" class="btn_model desativado">
+                        <input type="submit" value="Tentar de novo" id="btn_send_07" class="btn_model desativado">
                     </form>
                 </section>
 
@@ -144,6 +145,22 @@
                         <p id="alertUsu08"></p>
                         <input type="submit" value="Adicionar" id="btn_add_08" class="btn_model ativado" >
                         <input type="submit" value="Calcular" id="btn_send_08" class="btn_model desativado">
+                    </form>
+                </section>
+
+                 <!-- Exercício 09 -->
+                 <section id="exercicio">
+                    <h2>Exibir a metade dos valores digitados</h2>
+                    <p>Você poderá digitar 6 números.</p>
+                    <form id="form09">
+                        <div class="input">
+                            <label>Digite um número: </label>
+                            <input type="text" name="num_09" id="num_09">
+                        </div>
+                        <p id="alertUsu09"></p>
+                        <input type="submit" value="Adicionar na primeira array" id="btn_add1_09" class="btn_model ativado">
+                        <input type="submit" value="Adicionar na segunda array" id="btn_add2_09" class="btn_model desativado" disabled>
+                        <input type="submit" value="Calcular" id="btn_send_09" class="openModal btn_model desativado" data-modal="modal-9" disabled>
                     </form>
                 </section>
 
@@ -196,8 +213,21 @@
                         <div class="resultado" id="resultado08"></div>
                     </div>
                 </dialog>
+
+                <!-- Modal 09 --> 
+                <dialog id="modal-9">
+                    <div class="modal-button">
+                        <button class="closeModal" data-modal="modal-9">X</button>
+                    </div>
+                    <div class="result">
+                        <div class="resultado" id="resultado09"></div>
+                    </div>
+                </dialog>
             </div>
         </main>
+        <footer>
+            <p>Todos os direitos reservados a Ariane Oliveira Silva.</p>
+        </footer>
         <script src="../Exercicio02/JS/modal.js"></script>
     </body>
 </html>
