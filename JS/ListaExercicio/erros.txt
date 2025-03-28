@@ -2,3 +2,4 @@
 2 - Apareceu as variáveis como Nan - estava sem: .value
 3 - Não estava parando na tela o modal - não estava importado o arquivo do js
 4 - Estranhando o value - Olha se o nome do id ta correto;
+5 - Erro na primeira linha - sempre alguma variável dando conflito de nome

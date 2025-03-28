@@ -43,48 +43,60 @@ btn_exemplo3.addEventListener('click', function(){
 })
 
 // inserindo no final do array
-document.write(`${numeros} <br>`)
+ex_adc_exc.innerHTML = `<p class="text">Lista original: ${numeros} </p>`
 // já devo colocar o valor que quero no final da fila
 numeros.push(60)
-document.write(`${numeros} <br>`)
+ex_adc_exc.innerHTML += '<p class="text"> numeros.push(60)</p>';
+ex_adc_exc.innerHTML += `<p class="text">Após adicionar: ${numeros} </p>`
 
 // inserindo no inicio do array
+
+ex_adc_exc.innerHTML += `<p class="text">numeros.unshift(0)</p>`
 numeros.unshift(0)
-document.write(`${numeros} <br>`)
+ex_adc_exc.innerHTML += `<p class="text">Após adicionar: ${numeros} </p>`
 
 // excluindo o último
+ex_adc_exc.innerHTML += `<p class="text">numeros.pop()</p>`
 numeros.pop()
-document.write(`${numeros} <br>`)
+ex_adc_exc.innerHTML += `<p class="text">Após excluir: ${numeros} </p>`
+
 
 // excluindo o primeiro elemento da lista
+ex_adc_exc.innerHTML += `<p class="text">numeros.shift()</p>`
 numeros.shift()
-document.write(`${numeros} <br>`)
+ex_adc_exc.innerHTML += `<p class="text">Após excluir: ${numeros} </p>`
 
 // funções callback: que criam novos arrays como responstas de uma tratativa de manipulação do array original, não editando o original
 
+const mapEx = document.getElementById('mapEx');
 // Map navegação por todos os elementos
 let numerosQudrados = numeros.map(n => n ** 2 )
-document.write(`${numerosQudrados} <br>`)
+mapEx.innerHTML = `<p class="text">${numerosQudrados}</p>`;
 
 let nomesGrandes = nomes.map(nomes => nomes.toUpperCase())
-document.write(`${nomesGrandes} <br>`)
+mapEx.innerHTML += `<p class="text">${nomesGrandes}</p>`
 
+const filterEx = document.getElementById('filterEx');
 // Filter: ele gera um outra array de retorno com os valores que satisfazem uma condição
+
 let numerosPares = numeros.filter(function(numero){
     return numero%2 === 0;
 })
-document.write(`${numerosPares} <br>`)
+filterEx.innerHTML = `${numerosPares}`;
 
+const findEx = document.getElementById('findEx');
 // find: ele percorre um array original e assim que acha um valor que atenda uma condição ele para de percorrer e retorna esse valor encontrado
 let primeiroPar = numeros.find(function(numero){
     return numero % 2 === 0;
 })
-document.write(`O primeiro par é ${primeiroPar} <br>`);
+findEx.innerHTML = `O primeiro par é ${primeiroPar} <br>`;
 
 // spread
 // como eu junto dois arrays
-let livrosP = ['ler um café e tomar uma poesia', 'para você que teve um dia ruim', 'extraordinário']
-let livrosC = ['Diário de um banana', 'It a coisa', 'harry potter']
+let livrosP = ['ler um café e tomar uma poesia', ' para você que teve um dia ruim', ' extraordinário']
+let livrosC = [' Diário de um banana', ' It a coisa', ' harry potter']
 
 catalogo = [...livrosP, ...livrosC]
-document.write(`${catalogo}`)
+
+const juntarArrays = document.getElementById('juntarArrays');
+juntarArrays.innerHTML = `${catalogo}`;

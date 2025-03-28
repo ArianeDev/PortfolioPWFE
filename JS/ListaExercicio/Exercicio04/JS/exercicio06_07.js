@@ -36,8 +36,6 @@ let cont = 1;
 function AdicionarNomes(event){
     event.preventDefault();
 
-    console.log("OI")
-
     let nome_07 = document.getElementById('nome_07').value;
 
     // Analisar se o campo esta vazio
