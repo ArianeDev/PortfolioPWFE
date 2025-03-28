@@ -31,69 +31,61 @@ const alertUsu07 = document.getElementById('alertUsu07');
 const btn_send_07 = document.getElementById('btn_send_07')
 const btn_add_07 = document.getElementById('btn_add_07');
 
+let cont = 1;
 
 function AdicionarNomes(event){
     event.preventDefault();
 
+    console.log("OI")
+
     let nome_07 = document.getElementById('nome_07').value;
 
+    // Analisar se o campo esta vazio
     if(nome_07 === ""){
         alertUsu07.innerHTML = `<p>Preencha o campo!</p>`;
         return;
     }
 
-    
-    if(num >= 100 && num <= 200){
+    // Ver se a quantidade de tentativas é menor que 5
+    if(cont < 5){
+        for(let i in nomes){
+            if(nomes[i] === nome_07){
+                alertUsu07.innerHTML = `<p>O indice do nome é ${i}. Parabéns você acertou!</p>`;
+                return;
+            }
+        }
+        alertUsu07.innerHTML = `<p>Você tem mais ${5 - cont} tenativas.</p>`;
 
-        list_num_05.push(num);
-
-        if(list_num_05.length === 8){
-            document.getElementById('num05').value = "";
-            alertUsu05.innerHTML = `<p>Já escreveu 8 números</p>`;
-            document.getElementById('num05').setAttribute('readonly', true);
+    } else if(cont === 5){ // Finalizar tentativas do usuário
+        document.getElementById('nome_07').value = "";
+        alertUsu07.innerHTML = `<p>Você já fez 8 tentaivas! Não foi dessa vez, tente de novo!</p>`;
         
-            btn_send_05.classList.remove("desativado");
-            btn_send_05.classList.add("ativado");
-    
-            document.getElementById("btn_add_05").disabled = true;
-            btn_add_05.classList.remove("ativado");
-            btn_add_05.classList.add("desativado");
-            return;
-        }
-    
-        if(list_num_05.length < 8){
-            alertUsu05.innerHTML = `<p>Você digitou ${list_num_05.length} números.</p>`;
-        }
-    } else {
-        alertUsu05.innerHTML = `<p>Valor inválido</p>`;
+        btn_send_07.classList.remove("desativado");
+        btn_send_07.classList.add("ativado");
+
+        document.getElementById("btn_add_07").disabled = true;
+        btn_add_07.classList.remove("ativado");
+        btn_add_07.classList.add("desativado");
         return;
     }
     
+    cont += 1;
+    document.getElementById('nome_07').value = "";
+}
 
-    document.getElementById('num05').value = "";
+function Reiniciar(){
+    cont = 0;
+    alertUsu07.innerHTML = '';
+    document.getElementById('nome_07').removeAttribute('readonly');
+    
+    document.getElementById("btn_add_07").disabled = false;
+    document.getElementById("btn_send_07").disabled = true;
+    btn_send_07.classList.remove("ativado");
+    btn_send_07.classList.add("desativado");
+
+    btn_add_07.classList.add("ativado");
+    btn_add_07.classList.remove("desativado");
 }
 
 document.getElementById('btn_add_07').addEventListener('click', AdicionarNomes);
-
-form05.addEventListener('submit', function(event){
-    event.preventDefault();
-    
-    // Exibição do resultado
-    resultado05.innerHTML = `<p>Preenchido corretamente! Números digitados:</p>`;
-
-    for(let i of list_num_05){
-        resultado05.innerHTML += `<p>${i}</p>`;
-    }
-
-    // Formatação para reiniciar o formulário
-    list_num_05 = []
-    alertUsu05.innerHTML = '';
-    document.getElementById('num05').removeAttribute('readonly');
-    
-    document.getElementById("btn_send_05").disabled = true;
-    btn_send_05.classList.remove("ativado");
-    btn_send_05.classList.add("desativado");
-
-    btn_add_05.classList.add("ativado");
-    btn_add_05.classList.remove("desativado");
-})
+document.getElementById('btn_send_07').addEventListener('click', Reiniciar);

@@ -27,7 +27,7 @@ function AdicionarNumero(event){
     if(list_num.length === 3){
         // Parte que informa ao usuário que chegou na quantidade limite de inserções
         document.getElementById('num1').value = "";
-        alertUsu.innerHTML = `<p>Já escreveu 3 números</p><p>Clique no botão organizar</p>`;   
+        alertUsu.innerHTML = `<p>Já escreveu 3 números</p><p>Clique no botão organizar</p>`;
         document.getElementById('num1').setAttribute('readonly', true);
         
         // Ativar o botão para o usuário organizar a lista
@@ -43,7 +43,7 @@ function AdicionarNumero(event){
 
     // Mostra quantos números o usuário já digitou
     if(list_num.length < 3){
-        alertUsu.innerHTML = `<p>Você digitou ${list_num.length} números.</p>`;   
+        alertUsu.innerHTML = `<p>Você digitou ${list_num.length} números.</p>`;
     }
 
     document.getElementById('num1').value = "";
@@ -67,5 +67,13 @@ form05.addEventListener('submit', function(event){
         list_num = []
         alertUsu.innerHTML = '';
         document.getElementById('num1').removeAttribute('readonly');
+
+        document.getElementById("btn_add").disabled = false;
+        document.getElementById("btn_send").disabled = true;
+        btn_send.classList.remove("ativado");
+        btn_send.classList.add("desativado");
+
+        btn_add.classList.add("ativado");
+        btn_add.classList.remove("desativado");
     }
 })

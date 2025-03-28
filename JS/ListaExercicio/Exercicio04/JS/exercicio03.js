@@ -69,6 +69,7 @@ form03.addEventListener('submit', function(event){
         document.getElementById('idade').removeAttribute('readonly');
     }
 
+    document.getElementById("btn_add_03").disabled = false;
     document.getElementById("btn_send_03").disabled = true;
     btn_send_03.classList.remove("ativado");
     btn_send_03.classList.add("desativado");

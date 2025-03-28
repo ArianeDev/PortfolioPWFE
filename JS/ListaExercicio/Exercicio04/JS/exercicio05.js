@@ -68,6 +68,7 @@ form05.addEventListener('submit', function(event){
     alertUsu05.innerHTML = '';
     document.getElementById('num05').removeAttribute('readonly');
     
+    document.getElementById("btn_add_05").disabled = false;
     document.getElementById("btn_send_05").disabled = true;
     btn_send_05.classList.remove("ativado");
     btn_send_05.classList.add("desativado");

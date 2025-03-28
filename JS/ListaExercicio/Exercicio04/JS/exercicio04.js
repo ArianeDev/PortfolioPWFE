@@ -70,6 +70,7 @@ form04.addEventListener('submit', function(event){
         document.getElementById('numPar04').removeAttribute('readonly');
     }
 
+    document.getElementById("btn_add_04").disabled = false;
     document.getElementById("btn_send_04").disabled = true;
     btn_send_04.classList.remove("ativado");
     btn_send_04.classList.add("desativado");
