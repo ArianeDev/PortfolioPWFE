@@ -9,20 +9,38 @@
 let numeros = [5, 10, 15, 20, 25, 30];
 let nomes = ["Nico", "Gabi", "Livia", "Ge", "Ari", "Joyce", "Thifs", "Jão"]
 
-// exibição dos indices de um Array
-// for(let indice in numeros){
-//     alert(indice)
-// }
+const btn_exemplo1 = document.getElementById('btn_exemplo1');
+const p_exemplo1 = document.getElementById('p_exemplo1');
 
-// exibição dos valores guardados na Array
-// for(let valor of nomes){
-//     alert(valor)
-// }
+btn_exemplo1.addEventListener('click', function(){
+    // exibição dos indices de um Array
+    p_exemplo1.innerHTML =  `Os indices da array são:`;
+    for(let indice in numeros){
+        p_exemplo1.innerHTML +=  ` ${indice} `;
+    }
+})
 
-// percorrer o Array eu posso usar o foreach
-// numeros.forEach(function(valor){
-//     document.write(`${valor} <br>`);
-// })
+const btn_exemplo2 = document.getElementById('btn_exemplo2');
+const p_exemplo2 = document.getElementById('p_exemplo2');
+
+btn_exemplo2.addEventListener('click', function(){
+    // exibição dos valores guardados na Array
+    p_exemplo2.innerHTML =  `Os valores da array são:`;
+    for(let valor of nomes){
+        p_exemplo2.innerHTML +=  ` ${valor} `;
+    }
+})
+
+const btn_exemplo3 = document.getElementById('btn_exemplo3');
+const p_exemplo3 = document.getElementById('p_exemplo3');
+
+btn_exemplo3.addEventListener('click', function(){
+    // percorrer o Array eu posso usar o foreach
+    p_exemplo3.innerHTML =  `Os valores da array são:`;
+    numeros.forEach(function(valor){
+        p_exemplo3.innerHTML +=  ` ${valor} `;
+    })
+})
 
 // inserindo no final do array
 document.write(`${numeros} <br>`)

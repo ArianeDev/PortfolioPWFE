@@ -39,9 +39,13 @@ buttonArrow.addEventListener('click', function(){
     a = Number(prompt("Informe um número: "))
     b = Number(prompt("Informe outro número: "))
 
-    resultado = soma(a,b);
-    resultadoArrow.innerHTML = `A soma dos números digitado é ${resultado}`;
+    result = divir(v1,v2);
+    resultadoArrow.innerHTML = `A divisão dos números digitados é ${result}`;
+
 })
+
+// resultado = soma(a,b);
+// resultadoArrow.innerHTML = `A soma dos números digitado é ${resultado}`;
 
 // Number: ele vai intepretar os valores, sendo float ou int
 // ParseInt || ParseFloat: é obrigatório o dado enviado
